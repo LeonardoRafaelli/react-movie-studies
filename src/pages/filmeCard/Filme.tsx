@@ -6,14 +6,18 @@ interface Props {
 }
 
     function Filme({filme} : Props) {
-        // console.log(filme);
+        console.log(filme);
         return ( 
         <div className="movie-card">
+            <div>
             {filme.poster_path ?
                 <img src={`https://image.tmdb.org/t/p/w500/${filme.poster_path}`} alt=""/> : null
             }
-            {/* <img src={"/"} alt="" /> */}
-            <p>{filme.title}</p>
+            </div>
+            <div className="movie-description">
+            <h3>{filme.title}</h3>
+            <p>{filme.release_date}</p>
+            </div>
         </div>
      );
 }
