@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Header from './pages/Header';
+import Header from './pages/header/Header';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
