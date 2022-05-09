@@ -1,6 +1,5 @@
 import { useState } from "react";
-import Filme from "./Filme";
-import Button from "../components/button/button";
+import Filme from "./filmeCard/Filme";
 import './Search.scss'
 
 function Search() {
@@ -35,17 +34,17 @@ function Search() {
                     placeholder="Search for a movie here"
                     onKeyUpCapture={searchMovie}	
                     />
-
-                <div className="search-button">
-                    <Button onClick={searchMovie}>Search</Button>
-                </div>
             </div>
-            <div className="movies-container">
-                {
-                    movies.map(filme => {
-                        return <Filme filme={filme} />
-                    })
-                }
+            <div className="movie-section-container">
+                <div className="all-movies-container">
+                    <div className="each-movie-container">
+                        {
+                            movies.map(filme => {
+                                return <Filme filme={filme} />
+                            })
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     );
