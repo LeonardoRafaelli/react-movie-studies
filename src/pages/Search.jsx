@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Filme from "./filmeCard/Filme";
+import Filme from "./filmeCard/FilmeSearch";
 import './Search.scss'
 
 function Search() {
