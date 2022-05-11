@@ -1,5 +1,5 @@
 import React from 'react'
-import './FilmeSearch.scss'
+import './FilmeCard.scss'
 // import Link from 'react-router-dom'
 import { Link } from 'react-router-dom';
 

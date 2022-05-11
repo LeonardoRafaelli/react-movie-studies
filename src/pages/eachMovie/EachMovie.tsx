@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { useParams } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 
 function EachMovie({props}: any) {
-
+  const [currentMovie, setCurrentMovie] = useState();
+  
   const params = useParams();
   console.log(params.id);
 
@@ -14,7 +15,8 @@ function EachMovie({props}: any) {
     fetch(`https://api.themoviedb.org/3/movie/${params.id}?api_key=${apiKey}&language=en-US`)
     .then(response => response.json())
     .then(data => {
-      console.log(data);
+      setCurrentMovie(data);
+      console.log(currentMovie);
     })
   }
 

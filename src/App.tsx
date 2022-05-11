@@ -1,7 +1,7 @@
 import './App.css';
-import Search from './pages/Search';
-import Header from './pages/header/Header';
-import EachMovie from './pages/EachMovie';
+import Search from './components/movieSearch/Search';
+import Header from './components/header/Header';
+import EachMovie from './pages/eachMovie/EachMovie';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
