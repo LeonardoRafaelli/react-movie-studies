@@ -1,9 +1,13 @@
 import React from 'react'
 import './FilmeSearch.scss'
-import Link from 'react-router-dom'
+// import Link from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
+interface PType{
+    filme: any;
+}
 
-    function Filme({filme}) {
+    function Filme({filme} : PType) {
         console.log(filme);
         return ( 
         <div className="movie-card">
@@ -22,7 +26,7 @@ import Link from 'react-router-dom'
                     </div>
                     <div>
                         <Link to="/movie">
-                        <button>Acessar</button>
+                            <button>Acessar</button>
                         </Link>
                     </div>
                 </div>

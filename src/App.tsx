@@ -1,6 +1,7 @@
 import './App.css';
 import Search from './pages/Search';
 import Header from './pages/header/Header';
+import EachMovie from './pages/EachMovie';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Header />
         <Routes>
           <Route path="/" element={<Search />}/>
-          <Route path="/movie"/>
+          <Route path="/movie" element={<EachMovie />}/>
         </Routes>
     </BrowserRouter>
   )
