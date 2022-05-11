@@ -25,7 +25,7 @@ interface PType{
                         <p>{filme.release_date}</p>
                     </div>
                     <div>
-                        <Link to="/movie">
+                        <Link to={`/movie/${filme.id}`}>
                             <button>Acessar</button>
                         </Link>
                     </div>

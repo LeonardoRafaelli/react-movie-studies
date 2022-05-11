@@ -9,7 +9,7 @@ function App() {
       <Header />
         <Routes>
           <Route path="/" element={<Search />}/>
-          <Route path="/movie" element={<EachMovie />}/>
+          <Route path="/movie/:id" element={<EachMovie />}/>
         </Routes>
     </BrowserRouter>
   )
