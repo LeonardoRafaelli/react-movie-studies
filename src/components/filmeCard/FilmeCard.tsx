@@ -8,7 +8,6 @@ interface PType{
 }
 
     function Filme({filme} : PType) {
-        console.log(filme);
         return ( 
         <div className="movie-card">
             <div className="movie-image">
