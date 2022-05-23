@@ -3,11 +3,10 @@ import './FilmeCard.scss'
 // import Link from 'react-router-dom'
 import { Link } from 'react-router-dom';
 
-interface PType{
-    filme: any;
-}
 
-    function Filme({filme} : PType) {
+
+    function Filme({filme}: any) {
+        
         return ( 
         <div className="movie-card">
             <div className="movie-image">
