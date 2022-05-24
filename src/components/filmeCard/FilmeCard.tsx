@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 
 
-    function Filme({filme}: any) {
-        
+        function Filme({filme}: any) {
+
         return ( 
         <div className="movie-card">
             <div className="movie-image">
